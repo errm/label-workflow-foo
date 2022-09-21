@@ -1,0 +1,14 @@
+name: triggered-by-label
+
+on:
+  pull_request:
+    types: [ labeled ]
+
+jobs:
+  build:
+    if: ${{ github.event.label.name == 'trigger-label' }}
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - run: echo Hello, world!
