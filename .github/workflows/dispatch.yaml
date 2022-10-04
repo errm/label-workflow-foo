@@ -1,0 +1,11 @@
+name: Dispatch
+
+on:
+  repository_dispatch: {}
+
+jobs:
+  context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug
+        run: echo ${{ github.event }}
