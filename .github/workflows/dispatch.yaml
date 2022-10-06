@@ -3,11 +3,6 @@ name: Dispatch
 on:
   repository_dispatch:
     types:
-      - Kustomization/staging-mobile-dev-1-global-web.flux-system
-      - Kustomization/staging-mobile-dev-2-global-web.flux-system
-      - Kustomization/staging-qa1-global-web.flux-system
-      - Kustomization/staging-qa2-global-web.flux-system
-      - Kustomization/staging-web-dev-1-global-web.flux-system
       - Kustomization/staging-web-dev-2-global-web.flux-system
 
 jobs:
